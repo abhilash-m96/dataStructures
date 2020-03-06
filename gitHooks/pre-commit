@@ -1,0 +1,39 @@
+#!/usr/bin/env python
+
+import os
+
+"""
+from graphql import parse
+import sys
+
+class ParseCoreSchema:
+    def __init__(self):
+        self.inp_file =  sys.argv[1]
+        self.op_file = sys.argv[2]
+
+    def parse_to_md(self):
+        with open(self.inp_file) as input_file, open(self.op_file, "w") as output_file:
+            output_file.write("# Custom Directives\n\n")
+
+            raw_doc = input_file.read()
+            doc = parse(raw_doc)
+
+            for defn in doc.definitions:
+                if defn.kind == "directive_definition":
+                    output_file.write("## " + defn.name.value)
+                    output_file.write("\n")
+
+                    if defn.description is not None:
+                        desc = defn.description.value
+
+                        output_file.write(desc)
+                        output_file.write("\n\n")
+
+if __name__ == "__main__":
+    ParseCoreSchema().parse_to_md()
+
+"""
+
+print(__file__)
+print(os.path.abspath(__file__))
+print(os.path.dirname(os.path.abspath(__file__)))
